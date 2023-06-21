@@ -21,6 +21,6 @@ runs:
   steps:
     - name: Run setup script file
       run: |
-         chmod +x ./rctl_setup.sh
-         ./rctl_setup.sh
+         chmod +x $GITHUB_ACTION_PATH/rctl_setup.sh
+         $GITHUB_ACTION_PATH/rctl_setup.sh
       shell: bash
