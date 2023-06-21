@@ -20,11 +20,6 @@ runs:
   using: "composite"
   steps:
     - name: Run setup script file
-      env:
-        RCTL_REST_ENDPOINT: ${{ inputs.rafay-endpoint }}
-        RCTL_API_KEY: ${{ inputs.rafay-api-key }}
-        RCTL_API_SECRET: ${{ inputs.rafay-api-secret }}
-        RCTL_PROJECT: ${{ inputs.rafay-project }}
       run: |
          chmod +x ./rctl_setup.sh
          ./rctl_setup.sh
