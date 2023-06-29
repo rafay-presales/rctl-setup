@@ -1,21 +1,7 @@
 # action.yml
 name: 'Rafay CLI Setup'
 description: 'Downloads and configures Rafacy rctl CLI'
-inputs:
-  rafay-api-key:
-    description: 'Rafay API Key'
-    required: true
-  rafay-api-secret:
-    description: 'Rafay API Secret'
-    required: true
-  rafay-endpoint:
-    description: 'Rafay Console Endpoint'
-    required: true
-    default: 'console.rafay.dev'
-  rafay-project:
-    description: 'Rafay Project'
-    required: true
-    default: 'defaultproject'
+
 runs:
   using: "composite"
   steps:
